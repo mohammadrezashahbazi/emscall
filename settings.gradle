@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        // برای پلاگین‌هایی که از JitPack می‌خوان
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // برای کتابخانه‌های ماژول‌ها
+        maven { url "https://jitpack.io" }
+    }
+}
+
+rootProject.name = "EmergencyCallApp"
+include(":app")
